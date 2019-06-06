@@ -18,7 +18,7 @@
   <tbody>
     <% @client_workouts.each do |client_workout| %>
       <tr>
-        <td><%= client_workout.client_name %></td>
+        <td><a href="clients/find/<%= client_workout.client_name %>"><%= client_workout.client_name %></a></td>
         <td><%= client_workout.trainer %></td>
         <td><%= client_workout.duration_mins %></td>
         <td><%= client_workout.date_of_workout %></td>
